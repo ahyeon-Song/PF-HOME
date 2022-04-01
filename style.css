@@ -144,12 +144,15 @@ body {
   transition: 0.1s ease-in-out;
 }
 
-.thumbnail-wrap-pb, .thumbnail-wrap-web {
+/* projects */
+.thumbnail-wrap-pb {
   width: 100%;
   margin: auto;
+  margin-top: 7vw;
 }
 
 .thumbnail-wrap-web {
+  margin-top: -10vw;
 }
 
 .thumbnail-img {
@@ -176,7 +179,7 @@ thumbnail-b-1 {
   font-size: 1.1vw;
   font-weight: 400;
   margin-top: 2vw;
-  color: rgb(255, 255, 255);
+  color: rgb(196, 196, 196);
 }
 
 thumbnail-b-2 {
@@ -187,7 +190,7 @@ thumbnail-b-2 {
 }
 
 .thumbnail-link {
-  margin-top: 2vw;
+  margin-top: 4vw;
   width: 9.72vw;
   height: 2vw;
   padding-top: 0.55vw;
@@ -257,8 +260,19 @@ thumbnail-b-2 {
 .skills-b {
   margin: auto;
   text-align: center;
-  padding-top: 1vw;
+  padding-top: 2vw;
+  animation: updown 3s infinite ease-in-out alternate;
 }
+
+@keyframes updown{
+  from{
+    transform: translatey(0px);
+  }
+  to{
+    transform: translatey(-20px);
+  }
+}
+
 
 .skills-name {
   padding-top: 1vw;
@@ -273,6 +287,7 @@ thumbnail-b-2 {
   height: 0.02vw;
   margin-bottom: 5vw;
   background-color: rgb(239, 174, 174);
+  opacity: 50%;
 }
 
 .contact-wrap{
