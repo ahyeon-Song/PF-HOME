@@ -6,7 +6,6 @@
 
 /* Desktop 미디어쿼리 */
 @media only screen and (min-width: 2000px) {
-  
 }
 
 
@@ -19,27 +18,30 @@ nav{
     max-width: 100%;
     padding: 0;
     top: 1.4vw;
-    left: 40%;
+    left: 36%;
     text-align: center;
     position: fixed;
     z-index: 3;
   }
+
   nav ul{
     margin: 0;
     padding: 0;
   }
+
   nav li{
     display: inline;
     list-style-type: none;
     margin: 0 3px;
   }
+  
   nav a{
     text-align: center;
     margin: auto;
     font-size: 0.9vw;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 5px 15px;
+    padding: 5px 30px;
   }
   nav a:hover{
     opacity: 50%;
@@ -80,7 +82,7 @@ body {
 .intro-h {
   font-size: 5vw;
   font-weight: 800;
-  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background: linear-gradient(45deg, #ff6267 20%, #fad0c4 99%, #fad0c4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -213,7 +215,7 @@ thumbnail-b-2 {
   font-size: 2.5vw;
   font-weight: 800;
   text-align: center;
-  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background: linear-gradient(45deg, #ff6267 20%, #fad0c4 99%, #fad0c4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
@@ -223,7 +225,6 @@ thumbnail-b-2 {
   margin: auto;
   text-align: center;
   opacity: 20%;
-  margin-top: 3vw;
   position: absolute;
 }
 
@@ -236,7 +237,7 @@ thumbnail-b-2 {
   height: auto;
   background-color: rgb(0, 0, 0);
   margin: auto;
-  margin-top: 15vw;
+  margin-top: 10vw;
 }
 
 .skills-h {
@@ -244,7 +245,7 @@ thumbnail-b-2 {
   text-align: center;
   font-size: 1.2vw;
   font-weight: 700;
-  color: #d09fa1;
+  color: #b1b1b1;
 }
 
 .icons-wrap {
@@ -267,24 +268,30 @@ thumbnail-b-2 {
 
 /* contact */
 .line {
-  width: auto;
+  width: 80%;
+  margin: auto;
   height: 0.02vw;
-  margin-bottom: 2vw;
-  background-color: rgb(142, 142, 142);
+  margin-bottom: 5vw;
+  background-color: rgb(239, 174, 174);
 }
 
 .contact-wrap{
-  width: 80%;
+  width: 100%;
   margin: auto;
   margin-top: 20vw;
-  margin-bottom: 25vw;
+}
+
+.contact-wrap-wrap {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact-h {
-  font-size: 2.5vw;
+  font-size: 5vw;
   font-weight: 800;
-  text-align: center;
-  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background: linear-gradient(45deg, #ff6267 20%, #fad0c4 99%, #fad0c4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -292,29 +299,47 @@ thumbnail-b-2 {
 .contact-b {
   margin: auto;
   text-align: center;
-  margin-top: 5vw;
-}
-
-e-mail, view-resume {
-  width: 10vw;
-  height: 2vw;
-  padding-top: 0.55vw;
-  background-color: #8f4545;
+  margin-top: 3vw;
   font-size: 1.2vw;
   font-weight: 500;
+  margin-top: 1vw;
   color: white;
+}
+
+.mail-button, .viewresume-button {
+  width: 12vw;
+  height: 2.1vw;
+  background: linear-gradient(45deg, #ff9ca0 20%, #fad0c4 99%, #fad0c4 100%);
+  margin: auto;
+  text-align: center;
+  font-size: 1vw;
+  font-weight: 500;
+  border-radius: 5px;
+  padding-top: 0.6vw;
+}
+
+.viewresume-button {
+  margin-top: 4.5vw;
 }
 
 e-mail > a, view-resume > a {
+  width: 200px;
+  height: 50px;
   text-decoration: none;
-  color: white;
+  color: rgb(52, 52, 52);
 }
 
-.thumbnail-link:hover {
-  opacity: 60%;
-  transition: 0.2s ease-out;
+.mail-button:hover{
+  opacity: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
+.viewresume-button:hover{
+  opacity: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
 
 /* footer */
 footer {
@@ -322,6 +347,7 @@ footer {
   height: 2.43vw;
   background-color: #000000;
   margin: auto;
+  margin-top: 15vw;
   display: flex;
   justify-content: space-around;
 }
