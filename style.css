@@ -6,6 +6,16 @@
 
 /* Desktop 미디어쿼리 */
 @media only screen and (min-width: 2000px) {
+  html nav {
+    zoom: 0.8;
+    left: 38%;
+  }
+
+  html nav li{
+    display: inline;
+    list-style-type: none;
+    margin: 0 20px;
+  }
 }
 
 
@@ -41,7 +51,7 @@ nav{
     font-size: 0.9vw;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 5px 30px;
+    padding: 5px 25px;
   }
   nav a:hover{
     opacity: 70%;
