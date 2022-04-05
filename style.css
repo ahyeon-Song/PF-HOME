@@ -16,6 +16,28 @@
     list-style-type: none;
     margin: 0 20px;
   }
+
+  body .intro-wrap {
+    zoom: 0.8;
+  }
+
+  body .intro-b {
+    width: 40%;
+    margin: auto;
+    margin-top: 2.5vw;
+    font-size: 1vw;
+
+  }
+
+  body .thumbnail-text-wrap {
+    zoom: 0.8;
+    margin-left: 2vw;
+  }
+
+  .contact-wrap {
+    zoom: 0.8;
+  }
+
 }
 
 
@@ -133,12 +155,13 @@ body {
   margin-top: 2vw;
   font-size: 1.2vw;
   font-weight: 500;
+  line-height: 2vw;
   color: white;
 }
 
 .resume-button {
   margin: auto;
-  margin-top: 2vw;
+  margin-top: 3vw;
 }
 
 .resume-button >a {
@@ -148,7 +171,7 @@ body {
   color: #ff9a9e;
 }
 
-.resume-button:hover {
+.resume-button>a:hover {
   opacity: 50%;
   cursor: pointer;
   transition: 0.1s ease-in-out;
@@ -309,13 +332,14 @@ thumbnail-b-2 {
 .contact-wrap-wrap {
   width: 40%;
   margin: auto;
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
 }
 
 .contact-h {
-  font-size: 5vw;
+  font-size: 2.5vw;
   font-weight: 800;
+  text-align: center;
   background: linear-gradient(45deg, #ff6267 20%, #fad0c4 99%, #fad0c4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -324,10 +348,9 @@ thumbnail-b-2 {
 .contact-b {
   margin: auto;
   text-align: center;
-  margin-top: 3vw;
+  margin-top: 4vw;
   font-size: 1.2vw;
   font-weight: 500;
-  margin-top: 1vw;
   color: white;
 }
 
@@ -338,13 +361,13 @@ thumbnail-b-2 {
   margin: auto;
   text-align: center;
   font-size: 1vw;
-  font-weight: 500;
-  border-radius: 5px;
+  font-weight: 600;
+  border-radius: 0.5vw;
   padding-top: 0.6vw;
 }
 
 .viewresume-button {
-  margin-top: 4.5vw;
+  margin-top: 3vw;
 }
 
 e-mail > a, view-resume > a {
