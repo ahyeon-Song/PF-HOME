@@ -1,4 +1,4 @@
-# Projects - Data Visualization
+# Portfolio - Home
 <img src="https://ifh.cc/g/kofqlZ.png"  width="700">
 
 
