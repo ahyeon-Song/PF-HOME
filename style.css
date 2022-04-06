@@ -1,11 +1,17 @@
 /* mobile 미디어쿼리 */
 @media only screen and (max-width: 480px) { 
-
+  html {
+    display: none;
+  }
 }
 
 
 /* Desktop 미디어쿼리 */
 @media only screen and (min-width: 2000px) {
+  html {
+    overflow-x: hidden;
+  }
+
   html nav {
     zoom: 0.8;
     left: 38%;
@@ -17,6 +23,22 @@
     margin: 0 20px;
   }
 
+  body .thumbnail-img {
+    margin-left: 20vw;
+  }
+
+  body .thumbnail-wrap-web {
+    margin-top: 0;
+  }
+
+  body .thumbnail-wrap-sillim {
+    margin-top: 4vw;
+  }
+
+  body .thumbnail-wrap-me {
+    margin-top: 10vw;
+  }
+
   body .intro-wrap {
     zoom: 0.8;
   }
@@ -26,8 +48,8 @@
     margin: auto;
     margin-top: 2.5vw;
     font-size: 1vw;
-
   }
+  
 
   body .thumbnail-text-wrap {
     zoom: 0.8;
@@ -86,6 +108,7 @@ body {
     font-family: 'Pretendard';
     background-color: black;
     -webkit-animation: fadein 2.5s;
+    overflow-x: hidden;
 }
 
 @keyframes fadein {
@@ -184,8 +207,8 @@ body {
   margin-top: 7vw;
 }
 
-.thumbnail-wrap-web {
-  margin-top: -10vw;
+.thumbnail-wrap-web, .thumbnail-wrap-sillim, .thumbnail-wrap-me {
+  margin-top: -8vw;
 }
 
 .thumbnail-img {
@@ -219,6 +242,7 @@ thumbnail-b-2 {
   margin: auto;
   font-size: 1.1vw;
   font-weight: 400;
+  line-height: 1.5vw;
   color: rgb(255, 255, 255);
 }
 
