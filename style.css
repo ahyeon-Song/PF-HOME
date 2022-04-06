@@ -6,6 +6,38 @@
 }
 
 
+/* 태블릿 미디어쿼리 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html nav {
+    left: 25%;
+    top: 2%;
+  }
+
+  body .intro-wrap {
+    zoom: 1.4;
+    margin-top: 15vw;
+  }
+
+  body .thumbnail-text-wrap {
+    zoom: 1.2;
+    margin-left: 0;
+  }
+}
+
+.thumbnail-img {
+  margin-top: 12vw;
+}
+
+.buttons {
+  zoom: 1.4;
+}
+
+footer {
+  zoom: 0.8;
+}
+
+
+
 /* Desktop 미디어쿼리 */
 @media only screen and (min-width: 2000px) {
   html {
