@@ -1,23 +1,10 @@
 AOS.init(); 
 
 
-
-
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.to(".skills", {
-//     scrollTrigger: {
-//       trigger: '.skills',
-//       start: 'bottom bottom',
-//       end: '.skills-wrap',
-//       scrub: 1,
-//       pin: ".skills",
-//       pinSpacing: true,
-//       toggleActions: 'play none none none',
-//     },
-//     opacity: 0.3
-//   }); 
+const filter = "win16|win32|win64|mac|macintel";
+if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+    alert("Please visit with PC 👏");
+}
 
 
     
