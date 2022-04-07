@@ -1,5 +1,5 @@
 /* mobile 미디어쿼리 */
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
   html {
     display: none;
   }
@@ -8,67 +8,143 @@
 
 /* 태블릿 미디어쿼리 */
 @media (min-width: 768px) and (max-width: 1024px) {
+
   html nav {
-    left: 25%;
     top: 2%;
+    font-family: Helvetica, Sans-Serif;
   }
 
   body .intro-wrap {
     zoom: 1.4;
-    margin-top: 15vw;
+    margin-top: 12vw;
   }
 
   body .thumbnail-text-wrap {
     zoom: 1.2;
-    margin-left: 0;
+    top: -10vw;
+    width: 30vw;
+    line-height: 1.5vw;
   }
+
+  body .thumbnail-text-wrap,
+  .thumbnail-img {
+    justify-content: center;
+  }
+
+  body thumbnail-h {
+    line-height: 3vw;
+  }
+
+  body .thumbnail-wrap-pb {
+    margin-top: 5vw;
+  }
+
+  body .thumbnail-wrap-web,
+  .thumbnail-wrap-sillim,
+  .thumbnail-wrap-me {
+    margin-top: -25vw;
+  }
+
+  body .thumbnail-link {
+    width: 10vw;
+    height: auto;
+    padding: 0.8vw;
+    text-align: center;
+    background-color: #343434;
+  }
+
+  body .skills {
+    margin-top: -15vw;
+  }
+
+  body .skills-b {
+    margin-top: 3vw;
+  }
+
+  .buttons {
+    zoom: 1.4;
+  }
+
 }
 
-.thumbnail-img {
-  margin-top: 12vw;
-}
+/* 아이패드 프로 */
+@media (min-width: 1024px) and (max-width: 1366px) {
 
-.buttons {
-  zoom: 1.4;
-}
+  html nav {
+    top: 2%;
+    font-family: Helvetica, Sans-Serif;
+  }
 
-footer {
-  zoom: 0.8;
-}
+  body .intro-wrap {
+    zoom: 1.4;
+    margin-top: 12vw;
+  }
 
+  body .thumbnail-text-wrap {
+    zoom: 1.2;
+    top: -10vw;
+    width: 30vw;
+    line-height: 1.5vw;
+  }
+
+  body .thumbnail-text-wrap,
+  .thumbnail-img {
+    justify-content: center;
+  }
+
+  body thumbnail-h {
+    line-height: 3vw;
+  }
+
+  body .thumbnail-wrap-pb {
+    margin-top: 5vw;
+  }
+
+  body .thumbnail-wrap-web,
+  .thumbnail-wrap-sillim,
+  .thumbnail-wrap-me {
+    margin-top: -25vw;
+  }
+
+  body .thumbnail-link {
+    width: 10vw;
+    height: auto;
+    padding: 0.8vw;
+    text-align: center;
+    background-color: #343434;
+  }
+
+  body .skills {
+    margin-top: -15vw;
+  }
+
+  body .skills-b {
+    margin-top: 3vw;
+  }
+
+  .buttons {
+    zoom: 1.4;
+  }
+
+}
 
 
 /* Desktop 미디어쿼리 */
 @media only screen and (min-width: 2000px) {
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
   html {
     overflow-x: hidden;
   }
 
   html nav {
-    zoom: 0.8;
-    left: 38%;
+    zoom: 0.7;
   }
 
-  html nav li{
+  html nav li {
     display: inline;
     list-style-type: none;
-    margin: 0 20px;
-  }
-
-  body .thumbnail-img {
-    margin-left: 20vw;
-  }
-
-  body .thumbnail-wrap-web {
-    margin-top: 0;
-  }
-
-  body .thumbnail-wrap-sillim {
-    margin-top: 4vw;
-  }
-
-  body .thumbnail-wrap-me {
-    margin-top: 10vw;
+    margin: 0 50px;
   }
 
   body .intro-wrap {
@@ -81,11 +157,25 @@ footer {
     margin-top: 2.5vw;
     font-size: 1vw;
   }
-  
+
+  body .thumbnail-img {
+    margin-left: 20vw;
+  }
+
+  body .thumbnail-wrap-pb {
+    margin-top: -20vw;
+  }
 
   body .thumbnail-text-wrap {
     zoom: 0.8;
-    margin-left: 2vw;
+    margin-top: 5vw;
+  }
+
+  body .thumbnail-wrap-pb,
+  .thumbnail-wrap-web,
+  .thumbnail-wrap-sillim,
+  .thumbnail-wrap-me {
+    padding-top: 15vw;
   }
 
   .contact-wrap {
@@ -95,57 +185,62 @@ footer {
 }
 
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Noto+Sans+KR&display=swap');
-
 /* header */
-nav{
-    max-width: 100%;
-    padding: 0;
-    top: 1.4vw;
-    left: 35%;
-    text-align: center;
-    position: fixed;
-    z-index: 3;
-  }
+nav {
+  width: 100%;
+  padding: 0;
+  top: 1.4vw;
+  /* left: 35%; */
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+}
 
-  nav ul{
-    margin: 0;
-    padding: 0;
-  }
+nav ul {
+  margin: 0;
+  padding: 0;
+}
 
-  nav li{
-    display: inline;
-    list-style-type: none;
-    margin: 0 3px;
-  }
-  
-  nav a{
-    text-align: center;
-    margin: auto;
-    font-size: 0.9vw;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 5px 25px;
-  }
-  nav a:hover{
-    opacity: 70%;
-  }
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 3px;
+}
 
-  /* -------------------- */
-  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+nav a {
+  text-align: center;
+  margin: auto;
+  font-size: 0.9vw;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 25px;
+}
+
+nav a:hover {
+  opacity: 70%;
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 body {
-    font-family: 'Pretendard';
-    background-color: black;
-    -webkit-animation: fadein 2.5s;
-    overflow-x: hidden;
+  font-family: 'Pretendard';
+  background-color: black;
+  -webkit-animation: fadein 2.5s;
+  overflow-x: hidden;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .space {
@@ -162,9 +257,11 @@ body {
   margin-top: 10.4vw;
 }
 
-.intro-h, .intro-b, .resume-button {
+.intro-h,
+.intro-b,
+.resume-button {
   text-align: center;
-} 
+}
 
 .intro-h {
   font-size: 5vw;
@@ -181,22 +278,27 @@ body {
     letter-spacing: 1em;
     opacity: 0;
   }
-  40% { 
+
+  40% {
     opacity: 0.6;
   }
+
   100% {
     letter-spacing: normal;
     opacity: 1;
   }
 }
+
 @keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     letter-spacing: normal;
     opacity: 1;
@@ -219,7 +321,7 @@ body {
   margin-top: 3vw;
 }
 
-.resume-button >a {
+.resume-button>a {
   text-decoration: none;
   font-size: 1.3vw;
   font-weight: 700;
@@ -233,27 +335,30 @@ body {
 }
 
 /* projects */
-.thumbnail-wrap-pb {
-  width: 100%;
-  margin: auto;
-  margin-top: 7vw;
-}
-
-.thumbnail-wrap-web, .thumbnail-wrap-sillim, .thumbnail-wrap-me {
-  margin-top: -8vw;
-}
-
 .thumbnail-img {
   filter: brightness(60%);
   margin-left: 18vw;
   position: absolute;
+  margin-top: 15vw;
 }
 
 .thumbnail-text-wrap {
-  width: 34.7vw;
-  padding: 17.36vw 10.41vw;
+  width: 30vw;
+  padding: 28vw 10.41vw;
   position: relative;
 }
+
+.thumbnail-wrap-pb {
+  justify-content: center;
+}
+
+.thumbnail-wrap-web,
+.thumbnail-wrap-sillim,
+.thumbnail-wrap-me {
+  justify-content: center;
+  margin-top: -25vw;
+}
+
 
 thumbnail-h {
   margin: auto;
@@ -281,13 +386,13 @@ thumbnail-b-2 {
 .thumbnail-link {
   margin-top: 4vw;
   width: 9.72vw;
-  height: 2vw;
-  padding-top: 0.55vw;
+  height: auto;
+  padding: 0.6vw;
   text-align: center;
   background-color: #3d3d3d;
 }
 
-.thumbnail-link > a{
+.thumbnail-link>a {
   font-size: 1.2vw;
   font-weight: 500;
   text-decoration: none;
@@ -311,6 +416,7 @@ thumbnail-b-2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+  margin-top: -10vw;
 }
 
 .skills-bg {
@@ -320,7 +426,8 @@ thumbnail-b-2 {
   position: absolute;
 }
 
-.threed-wrap, .programming-wrap {
+.threed-wrap,
+.programming-wrap {
   margin-top: 8vw;
 }
 
@@ -353,11 +460,12 @@ thumbnail-b-2 {
   animation: updown 3s infinite ease-in-out alternate;
 }
 
-@keyframes updown{
-  from{
+@keyframes updown {
+  from {
     transform: translatey(0px);
   }
-  to{
+
+  to {
     transform: translatey(-20px);
   }
 }
@@ -379,7 +487,7 @@ thumbnail-b-2 {
   opacity: 50%;
 }
 
-.contact-wrap{
+.contact-wrap {
   width: 100%;
   margin: auto;
   margin-top: 20vw;
@@ -410,7 +518,8 @@ thumbnail-b-2 {
   color: white;
 }
 
-.mail-button, .viewresume-button {
+.mail-button,
+.viewresume-button {
   width: 12vw;
   height: 2.1vw;
   background: linear-gradient(45deg, #ff9ca0 20%, #fad0c4 99%, #fad0c4 100%);
@@ -426,20 +535,21 @@ thumbnail-b-2 {
   margin-top: 3vw;
 }
 
-e-mail > a, view-resume > a {
+e-mail>a,
+view-resume>a {
   width: 200px;
   height: 50px;
   text-decoration: none;
   color: rgb(52, 52, 52);
 }
 
-.mail-button:hover{
+.mail-button:hover {
   opacity: 50%;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
-.viewresume-button:hover{
+.viewresume-button:hover {
   opacity: 50%;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -457,7 +567,9 @@ footer {
 }
 
 
-.left, .center, .right {
+.left,
+.center,
+.right {
   align-content: center;
   color: white;
   font-size: 0.7vw;
@@ -474,8 +586,7 @@ footer {
 }
 
 
-.left {
-}
+.left {}
 
 .center {
   text-align: center;
