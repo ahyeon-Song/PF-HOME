@@ -343,7 +343,7 @@ body {
 }
 
 .thumbnail-text-wrap {
-  width: 30vw;
+  width: 26vw;
   padding: 28vw 10.41vw;
   position: relative;
 }
@@ -356,7 +356,7 @@ body {
 .thumbnail-wrap-sillim,
 .thumbnail-wrap-me {
   justify-content: center;
-  margin-top: -25vw;
+  margin-top: -30vw;
 }
 
 
