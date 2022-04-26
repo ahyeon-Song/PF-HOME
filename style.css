@@ -104,30 +104,9 @@
     line-height: 1.5vw;
   }
 
-  body .thumbnail-img {
-    margin-left: 20vw;
-  }
-
-  body .thumbnail-wrap-pb {
-    margin-top: -10vw;
-  }
-
-  body .thumbnail-text-wrap {
-    zoom: 0.8;
-    margin-top: 5vw;
-  }
-
-  body .thumbnail-wrap-pb,
-  .thumbnail-wrap-web,
-  .thumbnail-wrap-sillim,
-  .thumbnail-wrap-me {
-    padding-top: 10vw;
-  }
-
   .contact-wrap {
     zoom: 0.8;
   }
-
 }
 
 
@@ -197,7 +176,7 @@ body {
 }
 
 .space {
-  height: 3vw;
+  height: 1vw;
 }
 
 .space1 {
@@ -290,35 +269,39 @@ body {
 }
 
 /* projects */
-.thumbnail-img {
-  filter: brightness(60%);
-  margin-left: 18vw;
-  position: absolute;
+.projects-wrap {
+  width: 90%;
+  margin: auto;
   margin-top: 15vw;
+  align-items: center;
+  vertical-align: center;
+  margin-left: 8vw;
+}
+
+.a, .b {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b {
+  margin-top: 8vw;
+}
+
+.thumbnail-img:hover {
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
 }
 
 .thumbnail-text-wrap {
-  width: 26vw;
-  padding: 28vw 10.41vw;
-  position: relative;
+  margin-top: 1.5vw;
+  width: 40vw;
 }
-
-.thumbnail-wrap-pb {
-  justify-content: center;
-}
-
-.thumbnail-wrap-web,
-.thumbnail-wrap-sillim,
-.thumbnail-wrap-me {
-  justify-content: center;
-  margin-top: -30vw;
-}
-
 
 thumbnail-h {
   margin: auto;
   font-size: 2vw;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 thumbnail-h>a {
@@ -329,45 +312,38 @@ thumbnail-h>a {
 thumbnail-h:hover {
   text-decoration: underline;
   text-underline-position: under;
-
 }
 
 thumbnail-b-1 {
   margin: auto;
   font-size: 1.1vw;
   font-weight: 400;
-  margin-top: 2vw;
+  margin-top: 1.5vw;
   color: rgb(196, 196, 196);
 }
 
-thumbnail-b-2 {
+/* graphics */
+.graphics-wrap{
+  width: 95%;
   margin: auto;
-  font-size: 1.1vw;
-  font-weight: 400;
-  line-height: 1.5vw;
-  color: rgb(255, 255, 255);
+  margin-top: 10vw;
+  margin-left: 5vw;
 }
 
-.thumbnail-link {
-  margin-top: 4vw;
-  width: 9.72vw;
-  height: auto;
-  padding: 0.6vw;
-  text-align: center;
-  background-color: #3d3d3d;
+.graphics-h {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-left: 3vw;
+  background: linear-gradient(45deg, #ff6267 20%, #fad0c4 99%, #fad0c4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
 }
 
-.thumbnail-link>a {
-  font-size: 1.2vw;
-  font-weight: 500;
-  text-decoration: none;
-  color: white;
-}
-
-.thumbnail-link :hover {
-  opacity: 60%;
-  transition: 0.1s ease-out;
-  cursor: pointer;
+.graphics-img{
+  width: 95%;
+  margin: auto;
+  margin-top: 2vw;
 }
 
 /* skills */
@@ -382,7 +358,6 @@ thumbnail-b-2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
-  margin-top: -10vw;
 }
 
 .skills-bg {
