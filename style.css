@@ -275,7 +275,8 @@ thumbnail-h>a {
 thumbnail-h:hover {
   /* text-decoration: underline;
   text-underline-position: under; */
-  background-color: rgb(103, 255, 72);
+  background-color: aquamarine;
+  transition: 0.2s ease-in-out;
 }
 
 thumbnail-b-1 {
@@ -286,7 +287,7 @@ thumbnail-b-1 {
   color: rgb(146, 146, 146);
 }
 
-.skills-text {
+.skills-text, .contact-text {
   font-size: 4vw;
   margin-left: 8vw;
   margin-top: 10vw;
@@ -297,6 +298,49 @@ thumbnail-b-1 {
   right: 0;
 }
 
+.contact-wrap {
+  display: flex;
+  margin-top: 10vw;
+}
+
+.contact-text  {
+  font-size: 4vw;
+  margin-left: 8vw;
+  margin-top: 1vw;
+}
+
+.contact-b {
+  width: 20vw;
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 2vw;
+  margin-left: 3vw;
+  margin-top: 2vw;
+  color: rgb(0, 0, 0);
+}
+
+contact-highlight {
+  background-color: aquamarine;
+}
+
+.contact {
+  margin-bottom: 15vw;
+  width: 100%;
+  height: auto;
+  font-size: 4vw;
+  margin-left: 15vw;
+  line-height: 8vw;
+}
+
+.contact>a {
+  color: black;
+   text-decoration: underline;
+}
+
+.contact>a:hover {
+  opacity: 50%;
+}
+  
 /* footer */
 footer {
   width: 100%;
