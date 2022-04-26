@@ -147,13 +147,6 @@ nav a:hover {
   opacity: 50%;
 }
 
-.intro-img {
-  text-align: center;
-  margin: auto;
-  margin-top: 4vw;
-  margin-bottom: 4vw
-}
-
 /* ----------------------------------------------------------------------- */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -161,6 +154,7 @@ body {
   font-family: 'Pretendard';
   -webkit-animation: fadein 2.5s;
   overflow-x: hidden;
+  cursor: url('https://ifh.cc/g/zQtf3N.png'), auto;
 }
 
 @keyframes fadein {
@@ -173,18 +167,136 @@ body {
   }
 }
 
+body::-webkit-scrollbar {
+  width: 0.6vw;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #5666af; /* 스크롤바의 색상 */
+  
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
+.intro-img {
+  text-align: center;
+  margin: auto;
+  margin-top: -1vw;
+  margin-bottom: 4vw
+}
+
 .top-button {
   position: fixed;
-  bottom: 6.5vw;
+  bottom: 5.4vw;
   right: 3vw;
   z-index: 16;
 }
 
+.resume-button{
+  font-size: 4vw;
+  margin-left: 88vw;
+  margin-top: 2vw;
+}
+
+.resume-button>a {
+  text-decoration: none;
+  color: black;
+}
+
+.resume-button>a:hover {
+text-decoration: underline;
+}
+
+.img-gallery-text {
+  margin-top: 10vw;
+  font-size: 1.1vw;
+  width: 100%;
+  text-align: center;
+  line-height: 1.9vw;
+}
+
 .img-gallery {
   width: 100%;
-  margin-top: 7vw;
+  margin-top: 2vw;
   text-align: center;
 }
+
+/* projects */
+.projects-text {
+  font-size: 4vw;
+  margin-left: 8vw;
+  margin-top: 10vw;
+}
+
+.projects-wrap {
+  width: 90%;
+  margin: auto;
+  margin-top: 4vw;
+  align-items: center;
+  vertical-align: center;
+  margin-left: 8vw;
+}
+
+.a, .b {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b {
+  margin-top: 5vw;
+}
+
+.thumbnail-img:hover {
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.thumbnail-text-wrap {
+  margin-top: 1vw;
+  width: 40vw;
+}
+
+thumbnail-h {
+  margin: auto;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+thumbnail-h>a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+thumbnail-h:hover {
+  /* text-decoration: underline;
+  text-underline-position: under; */
+  background-color: rgb(103, 255, 72);
+}
+
+thumbnail-b-1 {
+  margin: auto;
+  font-size: 1.1vw;
+  font-weight: 400;
+  margin-top: 3vw;
+  color: rgb(146, 146, 146);
+}
+
+.skills-text {
+  font-size: 4vw;
+  margin-left: 8vw;
+  margin-top: 10vw;
+}
+
+.skills {
+  text-align: right;
+  right: 0;
+}
+
 /* footer */
 footer {
   width: 100%;
@@ -214,6 +326,7 @@ footer {
   zoom: 1.5;
   color: rgb(0, 0, 0);
   padding-left: 1vw;
+  color: rgb(69, 69, 144);
 }
 
 .social-icon :hover {
@@ -232,7 +345,7 @@ footer {
 }
 
 .right {
-  margin-left: 35vw;
+  margin-left: 40vw;
   letter-spacing: 0.1vw;
   font-size: 0.8vw;
 }
